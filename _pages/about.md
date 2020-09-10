@@ -5,6 +5,7 @@ header:
   image: "/images/zakim.jpg"
 ---
 
-I'm a senior data scientist who excels at data wrangling, machine learning, exploratory analysis, and data visualizations.
-
-Etc, etc, etc
+I am a highly motivated, curious and attentive data scientist with special interest in machine learning. I have a passion for programming and big data and I am able to communicate and present complex matters in a simple and appealing way.
+As former project manager, key account manager and department head I can draw on from 10+ years of work experience with a proven track record in managing large projects, diverse teams, critical deadlines and high quality standards.
+I am solution oriented, customer-centric, friendly, and a learner at heart. 
+Feel free to reach out for collaboration!
