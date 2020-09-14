@@ -12,7 +12,7 @@ locale                   : "en"
 title                    : "Lisa Lang"
 title_separator          : "-"
 name                     : "Lisa Lang"
-description              : "Data Science Portfolio XXXX"
+description              : "Data Science Portfolio XX"
 url                      : #"https://lisahlmsch.github.io"
 baseurl                  : #/lisahlmsch
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
