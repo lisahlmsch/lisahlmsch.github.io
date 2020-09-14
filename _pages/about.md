@@ -2,7 +2,7 @@
 title: "About"
 permalink: /about/
 header:
-  image: "/images/Gartenlichterkette.jpg"
+  image: "/images/Gartenlichterkette.jepg"
 ---
 
 I am a highly motivated, curious and attentive data scientist with special interest in machine learning. I have a passion for programming and big data and I am able to communicate and present complex matters in a simple and appealing way.
