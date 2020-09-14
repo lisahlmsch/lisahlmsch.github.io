@@ -1,13 +1,12 @@
 ---
 title: "KAGGLE COMPETITION article shares on social media"
 author: "Lisa Lang (1902224)"
-date: "March 28, 2020"
-output:
-  prettydoc::html_pretty:
-    highlight: vignette
-    theme: leonids
-    self_contained: false
-    keep_md: true
+date: 2020-03-28
+tags: [binary classification, random forest, gradient boosting, neural network]
+header:
+  image: "/images/perceptron/percept.jpg"
+excerpt: "Binary Classification, Random Forest, Gradient Boosting, Neural Network"
+mathjax: "true"
 ---
 
 
