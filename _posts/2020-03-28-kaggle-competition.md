@@ -1,6 +1,6 @@
 ---
-title: "KAGGLE COMPETITION article shares on social media"
-author: "Lisa Lang (1902224)"
+title: "KAGGLE competition: Article shares on social media"
+author: "Lisa Lang"
 date: 2020-03-28
 tags: [binary classification, random forest, gradient boosting, neural network]
 header:
