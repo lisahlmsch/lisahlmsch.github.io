@@ -1,6 +1,6 @@
 ---
 layout: posts
-permalink: /data-science/
+permalink: /projects/
 title: "Data Science projects"
 author_profile: true
 header:
