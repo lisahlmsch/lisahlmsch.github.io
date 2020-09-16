@@ -8,9 +8,8 @@ excerpt: "Stream processing, Amazon Kinesis, AWS, Redis, Jenkins, Slack"
 mathjax: "true"
 ---
 
-# Introduction
+## Introduction
 
-## Stream processing
 I created a stream processing application using the AWS Kinesis R package's daemon + Redis to record the overall amount of coins exchanged on Binance (per symbol) in the most recent micro-batch.
 Then I created a Jenkins job that reads from this Redis cache and prints the overall value (in USD) of the transactions -- based on the coin prices reported by the Binance API at the time of request. 
 I report two charts to the "#bots-final-project" Slack channel.

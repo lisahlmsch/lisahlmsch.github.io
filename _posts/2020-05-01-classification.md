@@ -1,5 +1,5 @@
 ---
-title: "Data Visualisation with ggplot"
+title: "Classification"
 date: 2020-02-01
 tags: [data visualisation, ggplot]
 header:

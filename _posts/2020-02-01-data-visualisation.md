@@ -8,7 +8,7 @@ excerpt: "Data visualisation, ggplot, shiny"
 mathjax: "true"
 ---
 
-# Spotify  -  data visualisation with ggplot
+## Spotify  -  data visualisation with ggplot
 
 This project is about describing the spotify_songs.csv dataset from the 4th week of #tidytuesday at https://github.com/rfordatascience/tidytuesday and expoloring possible problem/questions.
 
@@ -17,7 +17,7 @@ You can [get the PDF here](/assets/Spotify.pdf) .
 You can [get the html here](/assets/Spotify.html) .
 
 
-# Wiener Linien - data visualisation / shiny web application
+## Wiener Linien - data visualisation / shiny web application
 
 I created a shiny web application that allows the user to select a station within the Viennese local transportation system for which the upcoming departures are shown, together with a map indicating where the station is located. 
 The application can be accessed here: https://lisahlmsch.shinyapps.io/DV3_homework_assignment/
