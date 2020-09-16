@@ -14,3 +14,5 @@ This project is about describing the spotify_songs.csv dataset from the 4th week
 
 You can [get the PDF here](/assets/Spotify.pdf) .
 
+You can [get the html here](/assets/Spotify.html) .
+
