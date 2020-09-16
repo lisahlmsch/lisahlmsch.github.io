@@ -1,18 +1,22 @@
 ---
 title: "Natural Language Processing"
 date: 2020-02-01
-tags: [data visualisation, ggplot]
+tags: [NLP, sentiment, tfidf]
 header:
-  image: "/images/energy_ggplot.png"
-excerpt: "Data visualisation, ggplot, spotify"
+  image: "/images/trigram.png"
+excerpt: "NLP, sentiment analysis, topic modelling, TF-IDF, authorship"
 mathjax: "true"
 ---
 
-# Introduction
+## Whats app chat analysis
+I used a whats app group chat history to analyse the patterns in the conversations. I used sentiment analysis, topic modelling, checked similarities among chat members, unique words (TF-IDF), and authorship and - as fun side project, analysed the use of emojis.
 
-This project is about describing the spotify_songs.csv dataset from the 4th week of #tidytuesday at https://github.com/rfordatascience/tidytuesday and expoloring possible problem/questions.
+You can [get the html here](/assets/chat_analysis.html) .
 
-You can [get the PDF here](/assets/Spotify.pdf) .
+## Word Prediction
+This assignment is part of the Coursera Data Science Capstone project. The goal of this project is to create a text-prediction web application with R Shiny, that predicts the next word based on previous input using a natural language processing model. 
 
-You can [get the html here](/assets/Spotify.html) .
+You can [get the milestone report here](/assets/milestone_report.html) .
+
+More information on the prediction algorithm and shiny application will follow soon.
 
