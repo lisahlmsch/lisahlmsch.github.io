@@ -1,18 +1,21 @@
 ---
 title: "Classification"
-date: 2020-02-01
-tags: [data visualisation, ggplot]
+date: 2020-04-12
+tags: [classification, neural net, lasso, random forest, gbm, h2o, stacked model]
 header:
-  image: "/images/energy_ggplot.png"
-excerpt: "Data visualisation, ggplot, spotify"
+  image: "/images/mnist.png"
+excerpt: "classification, neural net, lasso, random forest, gbm, h2o, stacked model"
 mathjax: "true"
 ---
 
-# Introduction
+## Image class prediction using deep neural net models
+Together with my peer Alexandra we took the “Fashion MNIST dataset” where images of fashion items were to be classified . Images were provided as 28x28 pixel grayscale images. We built deep neural net models using accuracy as a measure of predictive power.
 
-This project is about describing the spotify_songs.csv dataset from the 4th week of #tidytuesday at https://github.com/rfordatascience/tidytuesday and expoloring possible problem/questions.
+You can [get the html here](/assets/image_class_prediction.html).
 
-You can [get the PDF here](/assets/Spotify.pdf) .
+## Binary classification
+The task of this kaggle competition was to predict which articles are shared the most in social media. I submitted several types of solutions:
 
-You can [get the html here](/assets/Spotify.html) .
+Using the caret package, I trained a LASSO model, a random forest model, a gradient boosting machine model and a neural net. Among these random forest had the best results in terms of AUC on the validation set. Using h2o I trained an elastic net model, a random forest, a gradient boosting machine model and a neural net and stacked them using both glm and gbm as a meta learner. The stacked model using glm as a metalearner produced the best results in terms of AUC on the validation set. Among the base models gbm showed the best results, while gbm using caret was rather weak in predicting the target variable.
 
+You can [get the html here](/assets/kaggle_competition.html).
