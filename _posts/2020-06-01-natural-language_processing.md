@@ -22,5 +22,3 @@ Have a looke at the shiny web application [here](https://lisahlmsch.shinyapps.io
 
 The code for the application is [here](https://github.com/lisahlmsch/work_samples/blob/master/NLP%20word%20prediction/app.R) .
 
-More information on the prediction algorithm and shiny application will follow soon.
-
