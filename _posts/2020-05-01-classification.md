@@ -1,10 +1,10 @@
 ---
 title: "Classification"
 date: 2020-04-12
-tags: [classification, neural net, lasso, random forest, gbm, h2o, stacked model]
+tags: [classification, neural net, lasso, random forest, gbm, h2o, stacked model, keras]
 header:
   image: "/images/mnist.png"
-excerpt: "classification, neural net, lasso, random forest, gbm, h2o, stacked model"
+excerpt: "classification, neural net, lasso, random forest, gbm, h2o, stacked model, keras"
 mathjax: "true"
 ---
 
