@@ -1,0 +1,17 @@
+---
+title: "Cloud Computing"
+date: 2019-11-19
+tags: [cloud, aws, EC2, nginx]
+header:
+  image: "/images/energy_ggplot.png"
+excerpt: "Data visualisation, ggplot, shiny"
+mathjax: "true"
+---
+
+## Cloud Computing
+
+This project is about using AWS Cloud Services and setting up a t2.nano instance.
+After logging into the instance I updated the operation system, installed nginx and modified the default html page.
+
+You can find the documentation [here](/assets/cloud_aws.pdf) .
+
