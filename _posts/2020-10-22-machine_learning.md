@@ -29,6 +29,23 @@ Regression models (both linear and non-linear) are used for predicting a real va
 6. Random Forest Classification
 
 #### 1. Simple Linear Regression
+Simple linear regression is used to determine the relationship between two variables. That is, given one independent variable x, it tells us what we can expect from the dependent variable y. 
+y = alpha + beta * x
+
+[Example](/assets/simple_linear_regression.pdf)
+
+
+#### 2. Multiple Linear Regression
+Multiple linear regression attempts to model the relationship between two or more explanatory variables and a response variable by fitting a linear equation to observed data. Every value of the independent variable x is associated with a value of the dependent variable y.
+
+* Pros: Works on any size of dataset, gives informations about relevance of features
+* Cons: The Linear Regression Assumptions
+  * A Linear Relationship between the outcome variable and the independent variables.  A plot of the standardized residuals verses the predicted Y' values show whether there is a linear or curvilinear relationship.
+  * Multivariate Normality -- Multiple regression assumes that the variables are normally distributed.
+  * No Multicollinearity -- This assumption assumes that the independent variables are not highly correlated with each other. This assumption is tested by the Variance Inflation Factor (VIF) statistic.
+  * Homoscedasticity -- This assumption requires that the variance of error terms are similar across the independent variables. As with the linear relationship assumption, Intellectus Statistics plot the standardized residuals verses the predicted Y' values can show whether points are equally distributed across all values of the independent variables or not.
+
+[Example](/assets/multiple_linear_regression.pdf)
 
 
 #### Classification
