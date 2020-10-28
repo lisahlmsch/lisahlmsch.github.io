@@ -19,7 +19,7 @@ Artificial intelligence is the science that empowers computers to mimic human in
 Supervised Learning algorithms are trained algorithms using labeled input/output data
 
 #### Regression
-Regression models (both linear and non-linear) are used for predicting a real value, like salary for example. Regression technique vary from Linear Regression to SVR and Random Forests Regression.
+Regression models (both linear and non-linear) are used for predicting a continuous real value, like salary for example. Regression technique vary from Linear Regression to SVR and Random Forests Regression.
 
 1. Simple Linear Regression
 2. Multiple Linear Regression
@@ -32,7 +32,7 @@ Regression models (both linear and non-linear) are used for predicting a real va
 Simple linear regression is used to determine the relationship between two variables. That is, given one independent variable x, it tells us what we can expect from the dependent variable y. 
 y = alpha + beta * x
 
-[Example](/assets/simple_linear_regression.pdf)
+[Example](https://colab.research.google.com/drive/1h0pyGFcxfHpb_xlKbu7aJb7ARdsiGU3I?usp=sharing)
 
 
 #### 2. Multiple Linear Regression
@@ -45,10 +45,12 @@ Multiple linear regression attempts to model the relationship between two or mor
   * No Multicollinearity -- This assumption assumes that the independent variables are not highly correlated with each other. This assumption is tested by the Variance Inflation Factor (VIF) statistic.
   * Homoscedasticity -- This assumption requires that the variance of error terms are similar across the independent variables. As with the linear relationship assumption, Intellectus Statistics plot the standardized residuals verses the predicted Y' values can show whether points are equally distributed across all values of the independent variables or not.
 
-[Example](/assets/multiple_linear_regression.pdf)
+[Example](https://colab.research.google.com/drive/13xTnf5Tg3TBQ55DpY8J8ZveTkrViHVcD?usp=sharing)
 
 
 #### Classification
+In classification you predict a category or a class.
+
 
 ### UNSUPERVISED LEARNING
 Unsupervised Learning algorithms are trained algorithms with no labeled data. It attempts at discovering hidden patterns on its own.
