@@ -1,9 +1,7 @@
 ---
 title: "Cloud Computing"
 date: 2019-11-19
-tags: [cloud, aws, EC2, nginx]
-header:
-  image: "/images/energy_ggplot.png"
+tags: [cloud, aws, EC2, nginx, R, aws.comprehend, aws.s3, SelectorGadget]
 excerpt: "Data visualisation, ggplot, shiny"
 mathjax: "true"
 ---
@@ -13,5 +11,13 @@ mathjax: "true"
 This project is about using AWS Cloud Services and setting up a t2.nano instance.
 After logging into the instance I updated the operation system, installed nginx and modified the default html page.
 
-You can find the documentation [here](/assets/cloud_aws.pdf) .
+You can find the documentation [here](/assets/cloud_aws.pdf).
+
+## Sentiment Analysis using aws.comprehend
+
+In this project I wrote an R script that included a function to scrape songtext lyrics with SelectorGadget on Google Chrome.
+Then, for the top 25 songs of all times, I checked the language and sentiment using aws.comprehend package.
+
+You can find the project [here](/assets/cloud_sentiment.pdf).
+
 
