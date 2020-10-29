@@ -8,12 +8,16 @@ excerpt: "Python"
 mathjax: "true"
 ---
 
+*WORK IN PROGRESS*
+
+
 # The fundamentals of Machine Learning using Python
 
 What is machine learning?
 
 ## AI vs MACHINE LEARNING vs DEEP LEARNING
-Artificial intelligence is the science that empowers computers to mimic human intelligence such as decision making, text processing and visual perception. One subfield of AI is Machine Learning that enables machines to improve at a given task with experience. Other subfields include robotics or computer vision. Machine Learning has also various subfields: Supervised Learning, Unsupervised Learning and Reinforcement Learning. Deep Learning is a specialized filed of Machine Learning that relies on training of Deep Artificial Neural Networks (ANN) using a large dataset such as images or texts.
+**Artificial intelligence (AI)** is the science that empowers computers to mimic human intelligence or behavior such as decision making, text processing and visual perception. One subfield of AI is **Machine Learning (ML)** that enables machines to improve at a given task with experience. Other subfields of ML include robotics or computer vision. Machine Learning has also various subfields: Supervised Learning, Unsupervised Learning and Reinforcement Learning. 
+**Deep Learning (DL)** is a specialized field of Machine Learning that relies on training of Deep Artificial Neural Networks (ANN), which are inspired by the human brain, using a large dataset such as images or texts.  
 
 ### SUPERVISED LEARNING
 Supervised Learning algorithms are trained algorithms using labeled input/output data
