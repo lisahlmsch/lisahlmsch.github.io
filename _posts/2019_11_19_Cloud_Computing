@@ -1,8 +1,8 @@
 ---
 title: "Cloud Computing"
 date: 2019-11-19
-tags: [cloud, aws, EC2, nginx, R, aws.comprehend, aws.s3, SelectorGadget]
-excerpt: "Data visualisation, ggplot, shiny"
+tags: [cloud, aws, EC2, nginx, R, aws.comprehend, aws.s3, SelectorGadget, Databricks, Spark, Kinesis]
+excerpt: "Cloud computing, AWS, EC2, nginx, R, aws.comprehend, aws.s3, SelectorGadget, Databricks, Spark, Kinesis"
 mathjax: "true"
 ---
 
@@ -20,4 +20,8 @@ Then, for the top 25 songs of all times, I checked the language and sentiment us
 
 You can find the project [here](/assets/cloud_sentiment.pdf).
 
+## Streaming
 
+Using the databricks analytics platform and Spark, I connected to my Kinesis stream to be able to plot the trade amounts of transactions between different cryptocurrencies.
+
+You can find the project [here](/assets/databricks.pdf).
