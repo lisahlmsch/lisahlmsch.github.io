@@ -141,8 +141,6 @@ outliers = [x for x in data if x < lower or x > upper]
 print('Identified outliers: %d' % len(outliers))
 ```
 
---> More examples can be found [here] (https://colab.research.google.com/drive/1FVoyte5By2g3bjcoA87ElaZSBXFyhvQS?usp=sharing)
-
 * Use interquartile range: Q1- 1.5 (IQR) | Q3 + 1.5(IQR)
 ```python
 q25, q75 = percentile(data, 25), percentile(data, 75)
@@ -156,6 +154,8 @@ lower, upper = q25 - cut_off, q75 + cut_off
 outliers = [x for x in data if x < lower or x > upper]
 print('Identified outliers: %d' % len(outliers))
 ```
+
+-----> More examples can be found [here](https://colab.research.google.com/drive/1FVoyte5By2g3bjcoA87ElaZSBXFyhvQS?usp=sharing)
 
 **Probabilistic and Statistical Modelling**:
 Assumes specific distribution for data and uses expectation-maximization (EM) methods to esitmate the parameters of the model and calculate probability of membership of each datapoint in the distribution. Those with the least probability of membership are marked as outliers.  
