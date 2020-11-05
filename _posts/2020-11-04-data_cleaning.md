@@ -1,8 +1,8 @@
 ---
 title: "Data cleaning"
 date: 2020-11-04
-tags: [extreme_values, missing_values]
-excerpt: "Exreme values, missing values"
+tags: [extreme_values, missing_values, python]
+excerpt: "Exreme values, missing values, python"
 mathjax: "true"
 ---
 
@@ -58,9 +58,6 @@ Values of each variable should be within their admissible range.
 Check duplicates
 
 ### Check extreme values / outliers
-
-*Some data analysts call extreme values outliers. During my studies I was encouraged not using that term as it implies that they do not belong in the distribution, which may or may not be the case so I will try to stick to the expression "extreme values".*
-
 Even if you are no actively looking for extreme values (for example in a fraud detection system), it is still recommended to find extreme values in your data and remove or modify them:
 
 Extreme values can cause problems with certain types of models. For example, linear regression models are less robust to extreme values than decision tree models. 
@@ -118,23 +115,63 @@ When working with small data sets the model might be greatly affected by extreme
 
 **Extreme Value Analysis**:
 This is the most basic form of outlier detection and good for one dimensional data, but not valuable in multi-variate setting. It is assumed that values that are too small or too large are outliers. 
+
 *Methods*: Z-test and Student’s t-test, Interquartile Range Method (IQR), Standard Deviation Method 
+
 *Examples*:
-* Q1- 1.5 (IQR) | Q3 + 1.5(IQR)
+
 * Set thresholds of 2.5, 3, 3.5 or more standard deviations.
 
+```python
+from numpy.random import seed
+from numpy.random import randn
+from numpy import mean
+from numpy import std
+
+seed(1)
+data = 5 * randn(10000) + 50
+data_mean, data_std = mean(data, std(data)
+
+# set boundaries using 3 standard deviations below and above mean
+cut_off = data_std * 3
+lower, upper = data_mean - cut_off, data_mean + cut_off
+
+# outliers
+outliers = [x for x in data if x < lower or x > upper]
+print('Identified outliers: %d' % len(outliers))
+```
+
+--> More examples can be found [here] (https://colab.research.google.com/drive/1FVoyte5By2g3bjcoA87ElaZSBXFyhvQS?usp=sharing)
+
+* Use interquartile range: Q1- 1.5 (IQR) | Q3 + 1.5(IQR)
+```python
+q25, q75 = percentile(data, 25), percentile(data, 75)
+iqr = q75 - q25
+
+# set boundaries using IQR
+cut_off = iqr * 1.5
+lower, upper = q25 - cut_off, q75 + cut_off
+
+# outliers
+outliers = [x for x in data if x < lower or x > upper]
+print('Identified outliers: %d' % len(outliers))
+```
+
 **Probabilistic and Statistical Modelling**:
-Assumes specific distribution for data and uses expectation-maximization (EM) methods to esitmate the parameters of the model and calculate probability of membership of each datapoint in the distribution. Those with the least probability of membership are marked as outliers. 
-*Methods*: expectation-maximization (EM) methods 
+Assumes specific distribution for data and uses expectation-maximization (EM) methods to esitmate the parameters of the model and calculate probability of membership of each datapoint in the distribution. Those with the least probability of membership are marked as outliers.  
 
 **Linear regression models**:
 Data is modelled in lower dimensional sub spaces with the help of liniear correlations, and distance of each data point to a plane to fit the sub space is calculated. This distance is used to find extreme values.
+
 *Methods*: Principal Componant Analysis (PCA) 
 
 **Proximity based models**:
 Here we identify outliers by isolating them from the rest of the observations
+
 *Methods*: Clustering analysis, Density based analysis, Nearest Neighbours
+
 *Examples*:
+
 * KNN
 * K-means
 * Density-Based Spatial Clustering of Applications with Noise (DBSCAN)
@@ -144,8 +181,11 @@ In this method, the outliers increase the minimum code length to describe a data
 
 **High dimensional outlier detection models**:
 Specific methods to handle high dimension parsed data
+
 *Methods*: Tree based anomaly detection algorithm, Feature bagging
+
 *Examples*:
+
 * Isolation forest (iForest)
 * Local correlation integral
 * Angular based outlier detection
